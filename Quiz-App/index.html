@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-App</title>
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/quiz.css">
 </head>
 <body>
+    <div id="board">
+        SCORE : <span id="score">--</span>
+    </div>
     <div id="box">
         <div id="Q-holder">
-
+            What is website URL?
         </div>
         <div id="option-holder">
-            
+            <div id="optBox-1">
+                <div class="opt">Option 1</div>
+                <div class="opt">Option 2</div>
+            </div>
+            <div id="optBox-2">
+                <div class="opt">Option 3</div>
+                <div class="opt">Option 4</div>
+            </div>
         </div>
     </div>
+    <div id="btn-holder">
+        <button type="submit" id="end-btn">End Test</button>
+    </div>
+    
+    <script src="scripta/url.js"></script>
+    <script src="scripta/main.js"></script>
+    <script src="scripta/fetch.js"></script>
 </body>
 </html>
