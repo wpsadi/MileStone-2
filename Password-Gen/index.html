@@ -9,7 +9,11 @@
 <body>
     <h2 class="text-center">Password Gnerator</h2>
     <div class="flex flex-col items-center gap-7 mt-5">
-        <input type="text" name="pass" id="pass" disabled class="text-[2rem] rounded-lg border-2 border-x-lime-500 border-solid box-border px-3 py-2" value="aditya">
+        <div class="flex flex-col gap-3">
+            <input type="text" name="pass" id="pass" disabled class="text-[1.3rem] overflow-scroll rounded-lg border-2 border-x-lime-500 border-solid box-border px-3 py-2" value="aditya">
+            <button id="copy" class="rounded-full border-2 border-solid border-black-500 text-wrap px-4 py-2 text-white bg-blue-400 active:text-black active:border-black active:bg-white transition-colors">Copy to clipboard</button>
+        </div>
+
         <div id="box" class="flex flex-col gap-4 flex-wrap w-[95vw] sm:w-[90vw] md:w-[50vw] border-x-red-300 border-y-blue-400 border-solid border-2 px-6 py-12 rounded-tr-3xl rounded-bl-3xl">
             <div class="flex flex-row gap-5 px-5 justify-between" title="Number can range from 0 to 25">
                 <div class="prop">Password Length(4-25)</div>

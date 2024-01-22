@@ -6,13 +6,21 @@ const pass= document.getElementById("pass");
 const symbol = document.getElementById("symbol");
 const num = document.getElementById("num");
 
+const copy = document.getElementById("copy");
+
+copy.addEventListener("click", function(){
+    
+    const nav = navigator;
+    console.log("hi");
+    nav.clipboard.writeText(pass.value);
+})
+
 function last(arr){
     let x = random(0,arr.length-1)
     let y =arr[x];
     arr[x] = ""
     arr.push(y)
     pass.value = arr.join("")
-    // console.log(arr)
 }
 
 
@@ -143,5 +151,7 @@ len.addEventListener("input", () => {
 for (let x of [upper, lower, symbol, num]) {
     x.addEventListener("input", doChnge)
 }
+
+
 
 doChnge()
