@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Gen</title>
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body>
+    <h2 class="text-center">Password Gnerator</h2>
+    <div class="flex flex-col items-center gap-7 mt-5">
+        <input type="text" name="pass" id="pass" disabled class="text-[2rem] rounded-lg border-2 border-x-lime-500 border-solid box-border px-3 py-2" value="aditya">
+        <div id="box" class="flex flex-col gap-4 flex-wrap w-[95vw] sm:w-[90vw] md:w-[50vw] border-x-red-300 border-y-blue-400 border-solid border-2 px-6 py-12 rounded-tr-3xl rounded-bl-3xl">
+            <div class="flex flex-row gap-5 px-5 justify-between" title="Number can range from 0 to 25">
+                <div class="prop">Password Length(4-25)</div>
+                <div class="val"><input type="text" name="" id="length" value="12" class="px-2 py-1 border-x-slate-800 border-solid border-2 outline-none rounded-md max-w-[30vw]"></div>
+            </div>
+            <div class="flex flex-row gap-5 px-5 pr-20 justify-between">
+                <div class="prop">Include Uppercase letters</div>
+                <div class="val"><input type="checkbox" name="" id="upper" checked class="scale-[1.7] checked:bg-amber-400"></div>
+            </div>
+            <div class="flex flex-row gap-5 px-5 pr-20 justify-between">
+                <div class="prop">Include Lowercase letters</div>
+                <div class="val"><input type="checkbox" name="" id="lower" checked class="scale-[1.7]"></div>
+            </div>
+            <div class="flex flex-row gap-5 px-5 pr-20 justify-between">
+                <div class="prop">Include Symbols</div>
+                <div class="val"><input type="checkbox" name="" id="symbol" class="scale-[1.7]"></div>
+            </div>
+            <div class="flex flex-row gap-5 px-5 pr-20 justify-between">
+                <div class="prop">Include Numbers</div>
+                <div class="val"><input type="checkbox" name="" id="num" class="scale-[1.7]"></div>
+            </div>
+        </div>
+    </div>
+    <script src="code.js"></script>
+
+</body>
+</html>
